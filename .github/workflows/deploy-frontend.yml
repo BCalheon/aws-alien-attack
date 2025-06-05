@@ -2,10 +2,12 @@ name: Deploy Frontend to GitHub Pages
 
 on:
   push:
-    branches: [master]
+    branches: [main]
 
 jobs:
   deploy:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
 
     steps:
